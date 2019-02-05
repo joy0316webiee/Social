@@ -39,9 +39,6 @@ class EditProfile extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log("Props: ", this.props.profile.profile);
-    console.log("nextProps: ", nextProps.profile.profile);
-
     if (nextProps.errors) {
       this.setState({ errors: nextProps.errors });
     }
