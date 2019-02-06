@@ -245,6 +245,14 @@ class EditProfile extends Component {
                   error={errors.skills}
                   info="Please use comma separated values (eg. HTML,CSS,Javascript,PHP"
                 />
+                <TextFieldGroup
+                  placeholder="Github Username"
+                  name="githubusername"
+                  value={this.state.githubusername}
+                  onChange={this.onChange}
+                  error={errors.githubusername}
+                  info="If you want lastest repos and a Github link include your username"
+                />
                 <TextAreaFieldGroup
                   placeholder="Short Bio"
                   name="bio"
